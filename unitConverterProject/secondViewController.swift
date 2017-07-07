@@ -9,27 +9,35 @@
 import UIKit
 
 class secondViewController: UIViewController {
+    
+    @IBOutlet weak var inputFeetTextField: UITextField!
+    @IBOutlet weak var inputMetresTextField: UITextField!
+    @IBOutlet weak var inputFeetResultField: UILabel!
+    @IBOutlet weak var inputMetresResultField: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func convertToMetres() {
+         if let amount = Double(inputFeetTextField.text!){
+            let metres = round(1.00 / 3.28 * Double(inputFeetTextField.text!)!)
+            inputFeetResultField.text = String(metres) + " m"
+        }
     }
-    */
-
+    
+    func convertToFeet() {
+         if let amount = Double(inputMetresTextField.text!){
+            let feet = round(3.28 * Double(inputMetresTextField.text!)!)
+            inputMetresResultField.text = String(feet) + " ft"
+        
+        }
+    }
+    
+    @IBAction func inputFeetButton(_ sender: Any) {
+        convertToMetres()
+    }
+    @IBAction func inputMetresButton(_ sender: Any) {
+        convertToFeet()
+    }
 }

@@ -22,7 +22,6 @@ class thirdViewController: UIViewController {
     func convertToCelsius(){
         if let amount = Double(fahrenheitTextField.text!){
             let celsius = round((5.0 / 9.0 * (Double(fahrenheitTextField.text!)! - 32.0)))
-            
             fInCLabel.text = String(celsius) + " °C"
     }
     }

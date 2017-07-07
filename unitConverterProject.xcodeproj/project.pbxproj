@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B568CFFA1F0EBF29000867E1 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568CFF91F0EBF29000867E1 /* secondViewController.swift */; };
+		B568CFFC1F0EBF40000867E1 /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568CFFB1F0EBF40000867E1 /* thirdViewController.swift */; };
+		B568CFFE1F0EBF59000867E1 /* fourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568CFFD1F0EBF59000867E1 /* fourthViewController.swift */; };
 		B5EEA6F91F0D6F9F006FC1E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EEA6F81F0D6F9F006FC1E0 /* AppDelegate.swift */; };
 		B5EEA6FB1F0D6F9F006FC1E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EEA6FA1F0D6F9F006FC1E0 /* ViewController.swift */; };
 		B5EEA6FE1F0D6F9F006FC1E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5EEA6FC1F0D6F9F006FC1E0 /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B568CFF91F0EBF29000867E1 /* secondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
+		B568CFFB1F0EBF40000867E1 /* thirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
+		B568CFFD1F0EBF59000867E1 /* fourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fourthViewController.swift; sourceTree = "<group>"; };
 		B5EEA6F51F0D6F9F006FC1E0 /* unitConverterProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unitConverterProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5EEA6F81F0D6F9F006FC1E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5EEA6FA1F0D6F9F006FC1E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +105,9 @@
 			children = (
 				B5EEA6F81F0D6F9F006FC1E0 /* AppDelegate.swift */,
 				B5EEA6FA1F0D6F9F006FC1E0 /* ViewController.swift */,
+				B568CFF91F0EBF29000867E1 /* secondViewController.swift */,
+				B568CFFB1F0EBF40000867E1 /* thirdViewController.swift */,
+				B568CFFD1F0EBF59000867E1 /* fourthViewController.swift */,
 				B5EEA6FC1F0D6F9F006FC1E0 /* Main.storyboard */,
 				B5EEA6FF1F0D6F9F006FC1E0 /* Assets.xcassets */,
 				B5EEA7011F0D6F9F006FC1E0 /* LaunchScreen.storyboard */,
@@ -259,7 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B568CFFE1F0EBF59000867E1 /* fourthViewController.swift in Sources */,
 				B5EEA6FB1F0D6F9F006FC1E0 /* ViewController.swift in Sources */,
+				B568CFFA1F0EBF29000867E1 /* secondViewController.swift in Sources */,
+				B568CFFC1F0EBF40000867E1 /* thirdViewController.swift in Sources */,
 				B5EEA6F91F0D6F9F006FC1E0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +519,7 @@
 				B5EEA71F1F0D6F9F006FC1E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5EEA7201F0D6F9F006FC1E0 /* Build configuration list for PBXNativeTarget "unitConverterProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +528,7 @@
 				B5EEA7221F0D6F9F006FC1E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5EEA7231F0D6F9F006FC1E0 /* Build configuration list for PBXNativeTarget "unitConverterProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +537,7 @@
 				B5EEA7251F0D6F9F006FC1E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,27 +9,36 @@
 import UIKit
 
 class fourthViewController: UIViewController {
-
+   
+    @IBOutlet weak var inputCentimetresTextField: UITextField!
+    @IBOutlet weak var inputInchesTextField: UITextField!
+    @IBOutlet weak var inputCentimetresResultField: UILabel!
+    @IBOutlet weak var inputInchesResultField: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func centimetresToInches(){
+         if let amount = Double(inputCentimetresTextField.text!){
+            let inches = round((0.39 * (Double(inputCentimetresTextField.text!)!)))
+            inputCentimetresResultField.text = String(inches) + " in"
+        }
     }
-    */
+    
+    func inchesToCentimetres(){
+        if let amount = Double(inputInchesTextField.text!){
+            let centimetres = round((1 / 0.39 * (Double(inputInchesTextField.text!)!)))
+            inputInchesResultField.text = String(centimetres) + " cm"
+        }
+    }
+
+    @IBAction func inputCentimetresButton(_ sender: Any) {
+        centimetresToInches()
+    }
+    @IBAction func inputInchesButton(_ sender: Any) {
+        inchesToCentimetres()
+    }
+
 
 }

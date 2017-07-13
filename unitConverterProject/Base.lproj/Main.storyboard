@@ -23,6 +23,10 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background0" translatesAutoresizingMaskIntoConstraints="NO" id="goa-Mv-8Id">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="LGl-f3-Fi4" appends="YES" id="br4-Lk-FR5"/>
+                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unit Converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJ2-gT-rrw">
                                 <rect key="frame" x="82" y="28" width="211" height="88"/>
@@ -92,6 +96,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kat Ludington" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ho6-Bg-y0m">
+                                <rect key="frame" x="134" y="626" width="107" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -103,8 +114,12 @@
                             <constraint firstItem="goa-Mv-8Id" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oVl-Ak-gMr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="byKat" destination="ho6-Bg-y0m" id="SWC-ED-PL6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="LGl-f3-Fi4"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
@@ -122,6 +137,10 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="n8o-mF-hWQ">
                                 <rect key="frame" x="-1" y="0.0" width="376" height="667"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="7X6-br-uEA" appends="YES" id="1zv-al-dZp"/>
+                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fahrenheit and Celsius" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXm-U6-NyM">
                                 <rect key="frame" x="69" y="28" width="237" height="24"/>
@@ -201,6 +220,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjn-gP-T6X">
+                                <rect key="frame" x="134" y="626" width="107" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -215,9 +241,11 @@
                         <outlet property="celsiusTextField" destination="f4s-bk-gYZ" id="e9U-Jc-fpk"/>
                         <outlet property="fInCLabel" destination="sbc-bc-GsI" id="PGD-UE-XZS"/>
                         <outlet property="fahrenheitTextField" destination="Lnb-aP-gBa" id="e5P-Rk-9R1"/>
+                        <outlet property="myNameLabel" destination="Yjn-gP-T6X" id="5cF-E4-bdh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CPC-ob-X7o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="7X6-br-uEA"/>
             </objects>
             <point key="canvasLocation" x="1080.8" y="138.98050974512745"/>
         </scene>
@@ -235,6 +263,10 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="pcZ-QL-rRd">
                                 <rect key="frame" x="-1" y="0.0" width="376" height="667"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Si9-a5-Joy" appends="YES" id="qUi-cj-TX5"/>
+                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Centimetres and Inches" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x53-fJ-qQb">
                                 <rect key="frame" x="75" y="28" width="225" height="21"/>
@@ -329,6 +361,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zqr-Zs-QJp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Si9-a5-Joy"/>
             </objects>
             <point key="canvasLocation" x="1080.8" y="781.25937031484261"/>
         </scene>
@@ -346,6 +379,10 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="fi1-BW-K58">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="aLz-YX-kJK" appends="YES" id="jA3-8n-nhf"/>
+                                </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVc-h9-eG0">
                                 <rect key="frame" x="160" y="60" width="55" height="30"/>
@@ -440,6 +477,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="buz-5r-6wz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="aLz-YX-kJK"/>
             </objects>
             <point key="canvasLocation" x="1080.8" y="-508.69565217391306"/>
         </scene>
@@ -450,6 +488,6 @@
         <image name="chevron-right" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="PDA-8m-sEA"/>
+        <segue reference="9Vx-lg-bhI"/>
     </inferredMetricsTieBreakers>
 </document>
